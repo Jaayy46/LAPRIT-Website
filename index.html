@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LAPRIT – Young. Patient. Hungry.</title>
+  <meta name="description" content="LAPRIT – Christlicher Rapper aus der Schweiz. Musik als Reise, Botschaft und Verbindung zwischen Herz und Seele." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress -->
+  <div id="scroll-progress"></div>
+
+  <!-- Custom Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"><span id="cursor-label"></span></div>
+
+  <!-- Navigation -->
+  <nav id="nav">
+    <a href="#hero" class="nav-logo">LAPRI<span class="cross-t"></span></a>
+    <ul class="nav-links">
+      <li><a href="#about">Über mich</a></li>
+      <li><a href="#live">Live</a></li>
+      <li><a href="#musik">Musik</a></li>
+      <li><a href="#discographie">Diskographie</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <!-- O'Bros inspired: social icons in nav -->
+    <div class="nav-social">
+      <a href="https://www.instagram.com/lapr1t/" target="_blank" aria-label="Instagram">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+      </a>
+      <a href="https://www.tiktok.com/@laprit" target="_blank" aria-label="TikTok">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.16 8.16 0 004.77 1.52V6.73a4.85 4.85 0 01-1-.04z"/></svg>
+      </a>
+      <a href="https://open.spotify.com/artist/6ZSMoSfyoWWGazYjrdhSuP" target="_blank" aria-label="Spotify">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+      </a>
+      <a href="https://www.youtube.com/@lapritmusic" target="_blank" aria-label="YouTube">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+      </a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about"        class="mobile-nav-link">Über mich</a>
+    <a href="#live"         class="mobile-nav-link">Live</a>
+    <a href="#musik"        class="mobile-nav-link">Musik</a>
+    <a href="#discographie" class="mobile-nav-link">Diskographie</a>
+    <a href="#kontakt"      class="mobile-nav-link">Kontakt</a>
+  </div>
+
+  <!-- ─── Hero ──────────────────────────────────────────────────── -->
+  <section id="hero">
+    <video class="hero-bg" id="hero-bg" src="assets/video/laprit.mov" autoplay muted loop playsinline></video>
+    <div class="hero-ray"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">Christlicher Künstler · Schweiz</span>
+      <h1 class="hero-name">
+        <span class="hero-letter" style="--i:0">L</span><span
+        class="hero-letter" style="--i:1">A</span><span
+        class="hero-letter" style="--i:2">P</span><span
+        class="hero-letter" style="--i:3">R</span><span
+        class="hero-letter" style="--i:4">I</span><span
+        class="cross-t hero-letter" style="--i:5"></span>
+      </h1>
+      <p class="hero-tagline">Young &nbsp;·&nbsp; Patient &nbsp;·&nbsp; Hungry</p>
+      <div class="hero-divider"></div>
+      <div class="hero-ctas">
+        <a href="https://open.spotify.com/artist/6ZSMoSfyoWWGazYjrdhSuP" target="_blank" class="btn btn-gold">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+          Auf Spotify hören
+        </a>
+        <a href="https://www.youtube.com/@lapritmusic" target="_blank" class="btn btn-outline">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          YouTube ansehen
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ─── About ─────────────────────────────────────────────────── -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="reveal">
+          <div class="about-photo">
+            <img src="assets/images/A7_09982.jpg" alt="LAPRIT auf der Bühne" style="object-position:center top;" />
+            <div class="about-photo-frame"></div>
+          </div>
+        </div>
+        <div class="about-text-col">
+          <span class="section-label reveal">Über mich</span>
+          <h2 class="section-title reveal reveal-delay-1">Mein Weg.<br>Meine <em>Botschaft.</em><br>Meine Verbindung.</h2>
+          <div class="about-quote reveal reveal-delay-2">
+            <blockquote>„Musik ist für mich eine Reise – eine Botschaft und eine Verbindung zwischen Herz und Seele."</blockquote>
+          </div>
+          <div class="about-text reveal reveal-delay-3">
+            <p>Ich bin ein christlicher Künstler aus der Schweiz, der Glauben und Kunst zu etwas Besonderem verbindet. Meine Musik ist ehrlich, tiefgründig und getragen von dem Glauben, dass jeder Mensch eine Geschichte trägt – und dass diese Geschichte erzählt werden darf.</p>
+            <p>Mit deutschen Texten, die direkt ins Herz treffen, spreche ich über Vertrauen, Hoffnung, Schmerz und die bedingungslose Gnade Gottes. Das Album <strong style="color:var(--gold);">Trust</strong> (2025) ist mein bisher persönlichstes Werk.</p>
+            <p>Mein Motto: <em style="color:var(--gold-lt);">Young. Patient. Hungry.</em> – ein Bekenntnis zu Geduld, Wachstum und der Überzeugung, dass Gott immer zu rechter Zeit handelt.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Live Gallery ──────────────────────────────────────────── -->
+  <section id="live">
+    <div class="container-wide">
+      <div style="padding:0 2rem;">
+        <span class="section-label reveal">Live</span>
+        <h2 class="section-title reveal reveal-delay-1">Die <em>Bühne</em> ist mein Zuhause.</h2>
+      </div>
+      <!-- 7 photos (3 removed), editorial single-grid layout -->
+      <div class="gallery-grid" style="margin-top:3rem;">
+        <div class="gallery-item reveal">
+          <img src="assets/images/A7_08088.jpg" alt="LAPRIT – ICH BIN CHRIST" />
+          <div class="gallery-overlay"></div>
+        </div>
+        <div class="gallery-item reveal reveal-delay-1">
+          <img src="assets/images/A7_00207.jpg" alt="LAPRIT auf der Bühne" />
+          <div class="gallery-overlay"></div>
+        </div>
+        <div class="gallery-item reveal reveal-delay-2">
+          <img src="assets/images/A7_07944.jpg" alt="LAPRIT – Crowd" />
+          <div class="gallery-overlay"></div>
+        </div>
+        <div class="gallery-item reveal reveal-delay-3">
+          <img src="assets/images/A7_09796.jpg" alt="LAPRIT – Silhouette" />
+          <div class="gallery-overlay"></div>
+        </div>
+        <div class="gallery-item reveal reveal-delay-4">
+          <img src="assets/images/A7_07787.jpg" alt="LAPRIT – Live" />
+          <div class="gallery-overlay"></div>
+        </div>
+        <div class="gallery-item reveal reveal-delay-5">
+          <img src="assets/images/A7_07882.jpg" alt="LAPRIT – Stage" />
+          <div class="gallery-overlay"></div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="assets/images/_A7_1317.jpg" alt="LAPRIT – Show" />
+          <div class="gallery-overlay"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Musik ─────────────────────────────────────────────────── -->
+  <section id="musik">
+    <div class="container">
+      <span class="section-label reveal">Musik</span>
+      <h2 class="section-title reveal reveal-delay-1">Straight from <em>the Heart.</em></h2>
+      <div class="musik-layout" style="margin-top:3.5rem;">
+        <div>
+          <div class="song-list">
+            <a href="https://open.spotify.com/search/Vater%20Laprit" target="_blank" class="song-item reveal">
+              <span class="song-num">01</span>
+              <div class="song-info"><div class="song-name">Vater</div><div class="song-year">2025</div></div>
+              <div class="song-bar"><div class="song-bar-fill" style="width:100%"></div></div>
+            </a>
+            <a href="https://open.spotify.com/search/Gott%20Laprit" target="_blank" class="song-item reveal reveal-delay-1">
+              <span class="song-num">02</span>
+              <div class="song-info"><div class="song-name">Gott</div><div class="song-year">2025</div></div>
+              <div class="song-bar"><div class="song-bar-fill" style="width:93%"></div></div>
+            </a>
+            <a href="https://open.spotify.com/search/Amen%20Laprit" target="_blank" class="song-item reveal reveal-delay-2">
+              <span class="song-num">03</span>
+              <div class="song-info"><div class="song-name">Amen</div><div class="song-year">2025</div></div>
+              <div class="song-bar"><div class="song-bar-fill" style="width:79%"></div></div>
+            </a>
+            <a href="https://open.spotify.com/search/Gib%20n%C3%B6d%20uf%20Laprit" target="_blank" class="song-item reveal reveal-delay-3">
+              <span class="song-num">04</span>
+              <div class="song-info"><div class="song-name">Gib nöd uf</div><div class="song-year">2025</div></div>
+              <div class="song-bar"><div class="song-bar-fill" style="width:72%"></div></div>
+            </a>
+            <a href="https://open.spotify.com/search/Its%20Not%20Easy%20Laprit" target="_blank" class="song-item reveal reveal-delay-4">
+              <span class="song-num">05</span>
+              <div class="song-info"><div class="song-name">Its Not Easy</div><div class="song-year">2025</div></div>
+              <div class="song-bar"><div class="song-bar-fill" style="width:49%"></div></div>
+            </a>
+            <a href="https://open.spotify.com/search/Dein%20Wille%20Laprit" target="_blank" class="song-item reveal reveal-delay-5">
+              <span class="song-num">06</span>
+              <div class="song-info"><div class="song-name">Dein Wille</div><div class="song-year">2025</div></div>
+              <div class="song-bar"><div class="song-bar-fill" style="width:40%"></div></div>
+            </a>
+          </div>
+          <div style="margin-top:2.5rem;" class="reveal">
+            <a href="https://open.spotify.com/artist/6ZSMoSfyoWWGazYjrdhSuP" target="_blank" class="btn btn-outline">Alle Songs auf Spotify</a>
+          </div>
+        </div>
+        <div class="spotify-embed reveal reveal-delay-2">
+          <div class="embed-label">Jetzt streamen</div>
+          <iframe
+            src="https://open.spotify.com/embed/artist/6ZSMoSfyoWWGazYjrdhSuP?utm_source=generator&theme=0"
+            width="100%" height="420" frameborder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Diskographie ──────────────────────────────────────────── -->
+  <section id="discographie">
+    <div class="container">
+      <span class="section-label reveal">Diskographie</span>
+      <h2 class="section-title reveal reveal-delay-1">Das <em>Werk.</em></h2>
+      <div class="album-grid">
+        <a href="https://open.spotify.com/artist/6ZSMoSfyoWWGazYjrdhSuP" target="_blank" class="album-card reveal">
+          <div class="album-cover trust"><div class="album-cover-inner">Trust</div><div class="album-glow"></div></div>
+          <div class="album-title">Trust</div><div class="album-type">Album</div><div class="album-year">2025</div>
+        </a>
+        <a href="https://open.spotify.com/search/Vater%20Laprit" target="_blank" class="album-card reveal reveal-delay-1">
+          <div class="album-cover single"><div class="album-cover-inner">Vater</div><div class="album-glow"></div></div>
+          <div class="album-title">Vater</div><div class="album-type">Single</div><div class="album-year">2025</div>
+        </a>
+        <a href="https://open.spotify.com/search/Gott%20Laprit" target="_blank" class="album-card reveal reveal-delay-2">
+          <div class="album-cover single"><div class="album-cover-inner">Gott</div><div class="album-glow"></div></div>
+          <div class="album-title">Gott</div><div class="album-type">Single</div><div class="album-year">2025</div>
+        </a>
+        <a href="https://open.spotify.com/search/Amen%20Laprit" target="_blank" class="album-card reveal reveal-delay-3">
+          <div class="album-cover single"><div class="album-cover-inner">Amen</div><div class="album-glow"></div></div>
+          <div class="album-title">Amen</div><div class="album-type">Single</div><div class="album-year">2025</div>
+        </a>
+        <a href="https://open.spotify.com/search/Dein%20Wille%20Laprit" target="_blank" class="album-card reveal reveal-delay-4">
+          <div class="album-cover single"><div class="album-cover-inner">Dein Wille</div><div class="album-glow"></div></div>
+          <div class="album-title">Dein Wille</div><div class="album-type">Single</div><div class="album-year">2025</div>
+        </a>
+        <a href="https://open.spotify.com/search/Gib%20n%C3%B6d%20uf%20Laprit" target="_blank" class="album-card reveal reveal-delay-5">
+          <div class="album-cover single" style="background:linear-gradient(145deg,#100e0a,#0f0f0f);">
+            <div class="album-cover-inner" style="font-size:0.9rem;">Gib nöd uf</div><div class="album-glow"></div>
+          </div>
+          <div class="album-title">Gib nöd uf</div><div class="album-type">Single</div><div class="album-year">2025</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Kontakt / Booking ──────────────────────────────────────── -->
+  <section id="kontakt">
+    <div class="container">
+      <div class="kontakt-grid">
+        <div>
+          <span class="section-label reveal">Kontakt &amp; Booking</span>
+          <h2 class="section-title reveal reveal-delay-1">Lass uns<br><em>gemeinsam</em><br>etwas schaffen.</h2>
+          <div class="about-text reveal reveal-delay-2" style="margin-top:2rem;">
+            <p>Du planst ein Event, einen Gottesdienst, ein Konzert oder ein Projekt? Ich freue mich über jede Anfrage – ob Kirchen, Festivals oder andere Veranstaltungen.</p>
+          </div>
+          <div class="kontakt-details reveal reveal-delay-3">
+            <div class="kontakt-item">
+              <div class="kontakt-icon">@</div>
+              <span>Instagram: <a href="https://instagram.com/lapr1t" target="_blank" style="color:var(--gold);text-decoration:none;">@lapr1t</a></span>
+            </div>
+            <div class="kontakt-item">
+              <div class="kontakt-icon">▶</div>
+              <span>YouTube: <a href="https://youtube.com/@lapritmusic" target="_blank" style="color:var(--gold);text-decoration:none;">@lapritmusic</a></span>
+            </div>
+            <div class="kontakt-item">
+              <div class="kontakt-icon">♪</div>
+              <span>TikTok: <a href="https://tiktok.com/@laprit" target="_blank" style="color:var(--gold);text-decoration:none;">@laprit</a></span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <form class="form reveal reveal-delay-2" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Name</label>
+                <input class="form-input" type="text" placeholder="Dein Name" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">E-Mail</label>
+                <input class="form-input" type="email" placeholder="email@beispiel.de" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Organisation / Veranstalter</label>
+              <input class="form-input" type="text" placeholder="Kirche, Festival, Verein..." />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Art der Anfrage</label>
+              <select class="form-select">
+                <option value="">Bitte wählen...</option>
+                <option>Konzertbooking</option>
+                <option>Gottesdienst / Church Event</option>
+                <option>Kollaboration</option>
+                <option>Interview / Podcast</option>
+                <option>Sonstiges</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Nachricht</label>
+              <textarea class="form-textarea" placeholder="Erzähl mir von deinem Event oder Projekt..." required></textarea>
+            </div>
+            <button type="submit" class="form-submit">Anfrage senden</button>
+          </form>
+          <div class="form-success" id="form-success">
+            <p>Danke für deine Nachricht!</p>
+            <span>Ich melde mich so bald wie möglich bei dir.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Social ────────────────────────────────────────────────── -->
+  <section id="social">
+    <div class="container">
+      <div class="social-inner">
+        <h2 class="social-title reveal">Folge meiner <em>Reise.</em></h2>
+        <div class="social-links">
+          <a href="https://open.spotify.com/artist/6ZSMoSfyoWWGazYjrdhSuP" target="_blank" class="social-link reveal">
+            <div class="social-link-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg></div>
+            <span class="social-link-label">Spotify</span>
+          </a>
+          <a href="https://www.youtube.com/@lapritmusic" target="_blank" class="social-link reveal reveal-delay-1">
+            <div class="social-link-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></div>
+            <span class="social-link-label">YouTube</span>
+          </a>
+          <a href="https://www.instagram.com/lapr1t/" target="_blank" class="social-link reveal reveal-delay-2">
+            <div class="social-link-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></div>
+            <span class="social-link-label">Instagram</span>
+          </a>
+          <a href="https://www.tiktok.com/@laprit" target="_blank" class="social-link reveal reveal-delay-3">
+            <div class="social-link-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.16 8.16 0 004.77 1.52V6.73a4.85 4.85 0 01-1-.04z"/></svg></div>
+            <span class="social-link-label">TikTok</span>
+          </a>
+          <a href="https://music.apple.com/us/artist/laprit/1726191052" target="_blank" class="social-link reveal reveal-delay-4">
+            <div class="social-link-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.997 6.124a9.23 9.23 0 0 0-.24-2.19c-.317-1.31-1.062-2.31-2.18-3.043a5.022 5.022 0 0 0-1.877-.726 10.496 10.496 0 0 0-1.564-.15c-.04-.003-.083-.01-.124-.013H5.988c-.152.01-.303.017-.455.026C4.786.07 4.043.15 3.34.428 2.004.958 1.04 1.88.475 3.208a5.485 5.485 0 0 0-.37 1.548c-.048.362-.077.726-.09 1.091-.01.24-.017.48-.018.72v12.867c.01.283.018.568.034.85.056 1.003.292 1.95.81 2.812.69 1.15 1.68 1.92 2.99 2.282.575.16 1.163.232 1.76.252.502.017 1.002.02 1.504.022h12.023c.31-.005.618-.007.926-.02.598-.024 1.19-.092 1.764-.256 1.45-.407 2.455-1.282 3.065-2.65.303-.676.436-1.395.467-2.127.012-.267.02-.535.024-.803V6.816c-.003-.23-.01-.46-.02-.692zm-6.601 6.04l-6.123 3.536a.6.6 0 0 1-.9-.52V8.82a.6.6 0 0 1 .9-.52l6.123 3.536a.6.6 0 0 1 0 1.04v-.003l-.001.003z"/></svg></div>
+            <span class="social-link-label">Apple Music</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Footer ────────────────────────────────────────────────── -->
+  <footer>
+    <div class="footer-logo">LAPRI<span class="cross-t"></span></div>
+    <div class="footer-copy">© 2025 LAPRIT · Alle Rechte vorbehalten</div>
+    <div class="footer-verse">„Denn ich weiß, was ich für euch plane" — Jer. 29,11</div>
+  </footer>
+
+  <!-- ─── Lightbox ────────────────────────────────────────────────── -->
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Foto Vollansicht">
+    <button id="lightbox-close" aria-label="Schliessen">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <img id="lightbox-img" src="" alt="" />
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
