@@ -275,14 +275,14 @@ nav.scrolled {
 .hero-name {
   font-family: var(--ff-display);
   font-size: clamp(6rem, 22vw, 18rem);
-  font-weight: 700;
+  font-weight: 300;
   line-height: 0.88;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--white);
   text-shadow: 0 0 120px rgba(137,196,225,0.1), 0 0 40px rgba(137,196,225,0.05);
 }
-.hero-name em { font-style: normal; color: var(--gold); font-weight: 700; }
+.hero-name em { font-style: normal; color: var(--gold); font-weight: 300; }
 
 /* ─── Per-letter stagger animation ──────────────────────────── */
 .hero-letter {
