@@ -62,7 +62,10 @@
 
   <!-- ─── Hero ──────────────────────────────────────────────────── -->
   <section id="hero">
-    <video class="hero-bg" id="hero-bg" src="assets/video/laprit.mov" autoplay muted loop playsinline></video>
+    <video class="hero-bg" id="hero-bg" autoplay muted loop playsinline preload="auto">
+      <source src="assets/video/laprit.mp4" type="video/mp4" />
+      <source src="assets/video/laprit.mov" type="video/quicktime" />
+    </video>
     <div class="hero-ray"></div>
     <div class="hero-content">
       <span class="hero-eyebrow">Christlicher Künstler · Schweiz</span>
@@ -99,7 +102,7 @@
       <div class="about-grid">
         <div class="reveal">
           <div class="about-photo">
-            <img src="assets/images/A7_09982.jpg" alt="LAPRIT auf der Bühne" style="object-position:center top;" />
+            <img src="assets/images/A7_09982.jpg" alt="LAPRIT auf der Bühne" style="object-position:center top;" loading="lazy" />
             <div class="about-photo-frame"></div>
           </div>
         </div>
@@ -129,31 +132,31 @@
       <!-- 7 photos (3 removed), editorial single-grid layout -->
       <div class="gallery-grid" style="margin-top:3rem;">
         <div class="gallery-item reveal">
-          <img src="assets/images/A7_08088.jpg" alt="LAPRIT – ICH BIN CHRIST" />
+          <img src="assets/images/A7_08088.jpg" alt="LAPRIT – ICH BIN CHRIST" loading="lazy" />
           <div class="gallery-overlay"></div>
         </div>
         <div class="gallery-item reveal reveal-delay-1">
-          <img src="assets/images/A7_00207.jpg" alt="LAPRIT auf der Bühne" />
+          <img src="assets/images/A7_00207.jpg" alt="LAPRIT auf der Bühne" loading="lazy" />
           <div class="gallery-overlay"></div>
         </div>
         <div class="gallery-item reveal reveal-delay-2">
-          <img src="assets/images/A7_07944.jpg" alt="LAPRIT – Crowd" />
+          <img src="assets/images/A7_07944.jpg" alt="LAPRIT – Crowd" loading="lazy" />
           <div class="gallery-overlay"></div>
         </div>
         <div class="gallery-item reveal reveal-delay-3">
-          <img src="assets/images/A7_09796.jpg" alt="LAPRIT – Silhouette" />
+          <img src="assets/images/A7_09796.jpg" alt="LAPRIT – Silhouette" loading="lazy" />
           <div class="gallery-overlay"></div>
         </div>
         <div class="gallery-item reveal reveal-delay-4">
-          <img src="assets/images/A7_07787.jpg" alt="LAPRIT – Live" />
+          <img src="assets/images/A7_07787.jpg" alt="LAPRIT – Live" loading="lazy" />
           <div class="gallery-overlay"></div>
         </div>
         <div class="gallery-item reveal reveal-delay-5">
-          <img src="assets/images/_A7_1429.jpg" alt="LAPRIT – Stage" />
+          <img src="assets/images/_A7_1429.jpg" alt="LAPRIT – Stage" loading="lazy" />
           <div class="gallery-overlay"></div>
         </div>
         <div class="gallery-item reveal">
-          <img src="assets/images/_A7_1317.jpg" alt="LAPRIT – Show" />
+          <img src="assets/images/_A7_1317.jpg" alt="LAPRIT – Show" loading="lazy" />
           <div class="gallery-overlay"></div>
         </div>
       </div>
