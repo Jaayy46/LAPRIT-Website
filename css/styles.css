@@ -886,6 +886,67 @@ a.album-card { text-decoration: none; color: inherit; display: block; }
 .form-success p { font-family: var(--ff-display); font-size: 1.5rem; font-style: normal; font-weight: 800; letter-spacing: -0.01em; color: var(--gold); }
 .form-success span { font-size: 0.8rem; color: var(--muted); display: block; margin-top: 0.5rem; letter-spacing: 0.1em; }
 
+/* ─── Vers Strip ────────────────────────────────────────────── */
+#vers {
+  background: var(--black);
+  padding: 7rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+#vers::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(137,196,225,0.04) 0%, transparent 70%);
+  pointer-events: none;
+}
+.vers-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+  position: relative;
+  z-index: 1;
+}
+.vers-accent {
+  width: 1px;
+  height: 60px;
+  background: linear-gradient(to bottom, transparent, var(--gold), transparent);
+}
+.vers-text {
+  font-family: var(--ff-display);
+  font-size: clamp(2rem, 5vw, 3.8rem);
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+.vers-text em { color: var(--gold); font-style: normal; }
+.vers-cite {
+  font-family: var(--ff-body);
+  font-size: 0.65rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-style: normal;
+}
+
+/* ─── 3D Album Canvas ────────────────────────────────────────── */
+.album-cover-3d { padding: 0; background: transparent !important; }
+#trust-album-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 2px;
+}
+
 /* ─── Social ─────────────────────────────────────────────────── */
 #social { background: var(--black); border-top: 1px solid var(--border); padding: 5rem 2rem; }
 .social-inner { text-align: center; }
@@ -1010,6 +1071,10 @@ footer {
   .gallery-grid  { gap: 0.3rem; padding: 0 0.6rem; }
   .gallery-grid  { margin-top: 1.5rem !important; }
   .gallery-grid + .gallery-grid { margin-top: 0.3rem !important; }
+
+  /* Vers */
+  #vers { padding: 4.5rem 1.25rem; }
+  .vers-text { font-size: clamp(1.5rem, 6vw, 2.2rem); }
 
   /* Music */
   .song-item  { gap: 0.9rem; padding: 1rem 0; }

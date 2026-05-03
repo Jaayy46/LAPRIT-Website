@@ -122,6 +122,17 @@
     </div>
   </section>
 
+  <!-- ─── Vers Strip ──────────────────────────────────────────────── -->
+  <section id="vers">
+    <div class="vers-inner">
+      <div class="vers-accent reveal"></div>
+      <blockquote class="vers-text reveal reveal-delay-1">
+        „Vertrau auf den HERRN<br>von ganzem Herzen."
+      </blockquote>
+      <cite class="vers-cite reveal reveal-delay-2">Sprüche 3,5</cite>
+    </div>
+  </section>
+
   <!-- ─── Live Gallery ──────────────────────────────────────────── -->
   <section id="live">
     <div class="container-wide">
@@ -225,8 +236,11 @@
       <span class="section-label reveal">Diskographie</span>
       <h2 class="section-title reveal reveal-delay-1">Das <em>Werk.</em></h2>
       <div class="album-grid">
-        <a href="https://open.spotify.com/artist/6ZSMoSfyoWWGazYjrdhSuP" target="_blank" class="album-card reveal">
-          <div class="album-cover trust"><div class="album-cover-inner">Trust</div><div class="album-glow"></div></div>
+        <a href="https://open.spotify.com/artist/6ZSMoSfyoWWGazYjrdhSuP" target="_blank" class="album-card reveal" data-no-tilt>
+          <div class="album-cover trust album-cover-3d">
+            <canvas id="trust-album-canvas"></canvas>
+            <div class="album-glow"></div>
+          </div>
           <div class="album-title">Trust</div><div class="album-type">Album</div><div class="album-year">2025</div>
         </a>
         <a href="https://open.spotify.com/search/Vater%20Laprit" target="_blank" class="album-card reveal reveal-delay-1">
@@ -368,6 +382,7 @@
     <img id="lightbox-img" src="" alt="" />
   </div>
 
-  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js" defer></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
