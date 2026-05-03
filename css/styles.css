@@ -888,63 +888,49 @@ a.album-card { text-decoration: none; color: inherit; display: block; }
 
 /* ─── Vers Strip ────────────────────────────────────────────── */
 #vers {
-  background: var(--black);
-  padding: 7rem 2rem;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-#vers::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(137,196,225,0.04) 0%, transparent 70%);
-  pointer-events: none;
+  background: var(--deep);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 4rem 4rem;
 }
 .vers-inner {
-  max-width: 860px;
+  max-width: 1100px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 2.4rem;
-  position: relative;
-  z-index: 1;
+  gap: 3rem;
 }
-.vers-accent {
-  width: 1px;
-  height: 60px;
-  background: linear-gradient(to bottom, transparent, var(--gold), transparent);
+.vers-rule {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  opacity: 0.4;
+  min-width: 40px;
+}
+.vers-body {
+  flex-shrink: 0;
+  text-align: center;
+  max-width: 580px;
 }
 .vers-text {
   font-family: var(--ff-display);
-  font-size: clamp(2rem, 5vw, 3.8rem);
+  font-size: clamp(1.1rem, 2vw, 1.55rem);
   font-weight: 300;
-  font-style: normal;
-  letter-spacing: 0.06em;
+  font-style: italic;
+  letter-spacing: 0.04em;
   color: var(--white);
-  line-height: 1.25;
-  text-transform: uppercase;
+  line-height: 1.5;
+  display: block;
 }
-.vers-text em { color: var(--gold); font-style: normal; }
 .vers-cite {
+  display: block;
   font-family: var(--ff-body);
-  font-size: 0.65rem;
-  letter-spacing: 0.4em;
+  font-size: 0.62rem;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--gold);
   font-style: normal;
-}
-
-/* ─── 3D Album Canvas ────────────────────────────────────────── */
-.album-cover-3d { padding: 0; background: transparent !important; }
-#trust-album-canvas {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  border-radius: 2px;
+  margin-top: 0.8rem;
 }
 
 /* ─── Social ─────────────────────────────────────────────────── */
@@ -1073,8 +1059,10 @@ footer {
   .gallery-grid + .gallery-grid { margin-top: 0.3rem !important; }
 
   /* Vers */
-  #vers { padding: 4.5rem 1.25rem; }
-  .vers-text { font-size: clamp(1.5rem, 6vw, 2.2rem); }
+  #vers { padding: 3rem 1.25rem; }
+  .vers-inner { gap: 1.2rem; }
+  .vers-rule { min-width: 20px; }
+  .vers-body { max-width: 100%; }
 
   /* Music */
   .song-item  { gap: 0.9rem; padding: 1rem 0; }
