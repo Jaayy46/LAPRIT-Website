@@ -92,6 +92,19 @@ window.addEventListener('scroll', () => {
   }
 }, { passive: true });
 
+// ─── Cinema Reel Parallax ────────────────────────────────────────
+const cinemaVideo = document.getElementById('cinema-video');
+if (cinemaVideo) {
+  const cinemaEl = cinemaVideo.parentElement;
+  window.addEventListener('scroll', () => {
+    const rect = cinemaEl.getBoundingClientRect();
+    if (rect.bottom > 0 && rect.top < window.innerHeight) {
+      const progress = (window.innerHeight - rect.top) / (window.innerHeight + rect.height);
+      cinemaVideo.style.transform = `translateY(${(progress - 0.5) * 90}px)`;
+    }
+  }, { passive: true });
+}
+
 // ─── Scroll Reveal ──────────────────────────────────────────────
 const revealObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {

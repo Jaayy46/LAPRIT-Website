@@ -886,67 +886,68 @@ a.album-card { text-decoration: none; color: inherit; display: block; }
 .form-success p { font-family: var(--ff-display); font-size: 1.5rem; font-style: normal; font-weight: 800; letter-spacing: -0.01em; color: var(--gold); }
 .form-success span { font-size: 0.8rem; color: var(--muted); display: block; margin-top: 0.5rem; letter-spacing: 0.1em; }
 
-/* ─── Reel ──────────────────────────────────────────────────── */
-#reel { background: var(--black); }
-.reel-wrapper {
-  margin-top: 3rem;
-  border-radius: 2px;
+/* ─── Cinematic Moment ───────────────────────────────────────── */
+.cinema-moment {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 72vh;
+  min-height: 420px;
   overflow: hidden;
-  border: 1px solid var(--border);
-  background: #000;
 }
-.reel-wrapper video {
+.cinema-video {
+  position: absolute;
+  inset: 0;
   width: 100%;
-  display: block;
-  max-height: 80vh;
-  object-fit: contain;
+  height: 140%;
+  top: -20%;
+  object-fit: cover;
+  object-position: center top;
+  will-change: transform;
 }
-
-/* ─── Vers Strip ────────────────────────────────────────────── */
-#vers {
-  background: var(--deep);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  padding: 4rem 4rem;
+.cinema-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to bottom,
+      var(--black)       0%,
+      transparent        22%,
+      rgba(0,0,0,0.45)   50%,
+      transparent        78%,
+      var(--black)       100%);
 }
-.vers-inner {
-  max-width: 1100px;
-  margin: 0 auto;
+.cinema-content {
+  position: absolute;
+  inset: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 3rem;
-}
-.vers-rule {
-  flex: 1;
-  height: 1px;
-  background: linear-gradient(to right, transparent, var(--gold), transparent);
-  opacity: 0.4;
-  min-width: 40px;
-}
-.vers-body {
-  flex-shrink: 0;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 2rem;
   text-align: center;
-  max-width: 580px;
 }
-.vers-text {
-  font-family: var(--ff-display);
-  font-size: clamp(1.1rem, 2vw, 1.55rem);
-  font-weight: 300;
-  font-style: italic;
-  letter-spacing: 0.04em;
-  color: var(--white);
-  line-height: 1.5;
-  display: block;
-}
-.vers-cite {
-  display: block;
+.cinema-label {
   font-family: var(--ff-body);
-  font-size: 0.62rem;
-  letter-spacing: 0.3em;
+  font-size: 0.58rem;
+  letter-spacing: 0.45em;
   text-transform: uppercase;
   color: var(--gold);
   font-style: normal;
-  margin-top: 0.8rem;
+  opacity: 0.85;
+}
+.cinema-quote {
+  font-family: var(--ff-display);
+  font-size: clamp(1.5rem, 3.2vw, 3rem);
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--white);
+  line-height: 1.25;
+  max-width: 720px;
+  text-shadow: 0 2px 60px rgba(0,0,0,0.9), 0 0 120px rgba(0,0,0,0.6);
 }
 
 /* ─── Social ─────────────────────────────────────────────────── */
@@ -1074,11 +1075,9 @@ footer {
   .gallery-grid  { margin-top: 1.5rem !important; }
   .gallery-grid + .gallery-grid { margin-top: 0.3rem !important; }
 
-  /* Vers */
-  #vers { padding: 3rem 1.25rem; }
-  .vers-inner { gap: 1.2rem; }
-  .vers-rule { min-width: 20px; }
-  .vers-body { max-width: 100%; }
+  /* Cinema */
+  .cinema-moment { height: 55vh; min-height: 320px; }
+  .cinema-quote { font-size: clamp(1.1rem, 5vw, 1.6rem); }
 
   /* Music */
   .song-item  { gap: 0.9rem; padding: 1rem 0; }
