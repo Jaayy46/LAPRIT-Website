@@ -905,18 +905,20 @@ a.album-card { text-decoration: none; color: inherit; display: block; }
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 40%;
   filter: blur(28px) brightness(0.3) saturate(1.4);
-  transform: scale(1.08); /* hide blur edges */
+  transform: scale(1.08);
   pointer-events: none;
 }
-/* Sharp portrait video, centered, fully visible */
+/* Sharp foreground — fills box, object-fit:contain shows full video */
 .cinema-video {
-  position: relative;
-  z-index: 2;
-  width: auto;
+  position: absolute;
+  inset: 0;
+  width: 100%;
   height: 100%;
-  max-height: 100%;
   object-fit: contain;
+  object-position: center center;
+  z-index: 2;
   display: block;
 }
 .cinema-overlay {
@@ -940,7 +942,7 @@ a.album-card { text-decoration: none; color: inherit; display: block; }
   align-items: center;
   justify-content: flex-end;
   gap: 0.8rem;
-  padding: 0 2rem 4rem;
+  padding: 0 2rem 16vh;
   text-align: center;
   pointer-events: none;
 }
