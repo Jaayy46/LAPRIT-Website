@@ -92,15 +92,16 @@ window.addEventListener('scroll', () => {
   }
 }, { passive: true });
 
-// ─── Cinema Reel Parallax ────────────────────────────────────────
-const cinemaVideo = document.getElementById('cinema-video');
-if (cinemaVideo) {
-  const cinemaEl = cinemaVideo.parentElement;
+// ─── Cinema Reel Parallax (background only) ──────────────────────
+const cinemaBg = document.querySelector('.cinema-video-bg');
+if (cinemaBg) {
+  const cinemaEl = cinemaBg.parentElement;
   window.addEventListener('scroll', () => {
     const rect = cinemaEl.getBoundingClientRect();
     if (rect.bottom > 0 && rect.top < window.innerHeight) {
       const progress = (window.innerHeight - rect.top) / (window.innerHeight + rect.height);
-      cinemaVideo.style.transform = `translateY(${(progress - 0.5) * 90}px)`;
+      const offset = (progress - 0.5) * 60;
+      cinemaBg.style.transform = `scale(1.08) translateY(${offset}px)`;
     }
   }, { passive: true });
 }

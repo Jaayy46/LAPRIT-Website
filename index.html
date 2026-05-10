@@ -124,6 +124,11 @@
 
   <!-- ─── Cinematic Moment ────────────────────────────────────────── -->
   <div class="cinema-moment">
+    <!-- Blurred background (same src = 1 network request via browser cache) -->
+    <video class="cinema-video-bg" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+      <source src="assets/video/reel.mp4" type="video/mp4" />
+    </video>
+    <!-- Sharp foreground, centered, full portrait visible -->
     <video id="cinema-video" class="cinema-video" autoplay muted loop playsinline preload="auto">
       <source src="assets/video/reel.mp4" type="video/mp4" />
     </video>
