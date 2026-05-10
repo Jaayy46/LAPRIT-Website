@@ -886,6 +886,22 @@ a.album-card { text-decoration: none; color: inherit; display: block; }
 .form-success p { font-family: var(--ff-display); font-size: 1.5rem; font-style: normal; font-weight: 800; letter-spacing: -0.01em; color: var(--gold); }
 .form-success span { font-size: 0.8rem; color: var(--muted); display: block; margin-top: 0.5rem; letter-spacing: 0.1em; }
 
+/* ─── Reel ──────────────────────────────────────────────────── */
+#reel { background: var(--black); }
+.reel-wrapper {
+  margin-top: 3rem;
+  border-radius: 2px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #000;
+}
+.reel-wrapper video {
+  width: 100%;
+  display: block;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
 /* ─── Vers Strip ────────────────────────────────────────────── */
 #vers {
   background: var(--deep);
